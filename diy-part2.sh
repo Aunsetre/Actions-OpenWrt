@@ -9,7 +9,7 @@
 #============================================================
 
 # Modify default IP
-sed -i 's/192.168.31.2/192.168.50.5/g' package/base-files/files/bin/config_generatei
+#sed -i 's/192.168.31.2/192.168.50.5/g' package/base-files/files/bin/config_generatei
 
 cd package/lean/  
 
