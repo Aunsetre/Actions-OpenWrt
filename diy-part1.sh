@@ -59,6 +59,6 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
  cd openwrt-packages/
  rm -rf luci-app-smartdns/
  rm -rf smartdns/
- cd ~/lede/package/lean/  
+ cd ..
  git clone https://github.com/pymumu/openwrt-smartdns.git
  git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
