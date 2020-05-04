@@ -14,7 +14,7 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
  
-cd ~/lede/package/lean/  
+cd package/lean/  
 
 rm -rf luci-app-vssr  luci-lib-docker luci-app-dockerman luci-theme-argon luci-app-smartdns openwrt-smartdns luci-app-adguardhome openwrt-packages
 rm -rf openwrt-kcptun luci-app-kcptun lua-maxminddb small
