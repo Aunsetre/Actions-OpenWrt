@@ -17,7 +17,7 @@
 cd package/lean/  
 
 rm -rf luci-app-vssr  luci-lib-docker luci-app-dockerman luci-theme-argon luci-app-smartdns openwrt-smartdns luci-app-adguardhome openwrt-packages
-rm -rf openwrt-kcptun luci-app-kcptun lua-maxminddb small
+rm -rf openwrt-kcptun luci-app-kcptun lua-maxminddb small smartdns
 
 # adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
