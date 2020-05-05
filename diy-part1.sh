@@ -30,7 +30,6 @@ git clone https://github.com/lisaac/luci-app-dockerman.git
 git clone https://github.com/lisaac/luci-lib-docker.git
 
 #kcptun
-git clone https://github.com/kuoruan/openwrt-kcptun.git
 git clone https://github.com/kuoruan/luci-app-kcptun.git 
 
 # helloWorld
