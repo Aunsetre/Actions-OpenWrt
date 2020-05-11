@@ -17,14 +17,15 @@
 cd package/lean/  
 
 rm -rf luci-app-vssr  luci-lib-docker luci-app-dockerman luci-theme-argon luci-app-smartdns openwrt-smartdns luci-app-adguardhome openwrt-packages
-rm -rf openwrt-kcptun luci-app-kcptun lua-maxminddb small smartdns
-
+rm -rf kcptun  lua-maxminddb small
+ 
 # adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 
 # luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 sed -i 's/Microsoft Yahei/Sarasa UI SC/ ' luci-theme-argon/htdocs/luci-static/argon/css/style.css
+
 #docker
 git clone https://github.com/lisaac/luci-app-dockerman.git
 git clone https://github.com/lisaac/luci-lib-docker.git
@@ -37,6 +38,7 @@ git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依
 git clone https://github.com/jerrykuku/luci-app-vssr.git 
 
 # passwall 依赖
+#brook  chinadns-ng   dns2socks  ipt2socks  kcptun  pdnsd-alt  simple-obfs  tcping  v2ray-plugin
  git clone https://github.com/kenzok8/small
 
 #luci-app-openclash ------------------openclash图形
@@ -58,6 +60,7 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
  cd openwrt-packages/
  rm -rf luci-app-smartdns/
  rm -rf smartdns/
- cd ..
- git clone https://github.com/pymumu/openwrt-smartdns.git
- git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
+ #
+ #smartdns
+git clone  https://github.com/pymumu/openwrt-smartdns.git
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
