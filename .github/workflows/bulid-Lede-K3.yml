@@ -9,13 +9,15 @@
 name: Build Lede K3
 
 on:
-  # push:
-  #   branches:
-  #     - master
-  #schedule:
-  #  - cron: '0 22 * * 0'
   repository_dispatch:
     types: run
+    push:
+      branches:
+         - master
+      paths:
+         - '.k3-config'
+    schedule:
+      - cron: '0 22 * * 0'
   watch:
     types: started
 
