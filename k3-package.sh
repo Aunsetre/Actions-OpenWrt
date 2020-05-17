@@ -1,3 +1,4 @@
+cd package/lean/
 # adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 
