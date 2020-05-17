@@ -3,6 +3,7 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 
 # luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+sed -i 's/Microsoft Yahei/Sarasa UI SC/ ' luci-theme-argon/htdocs/luci-static/argon/css/style.css
 
 #docker
 git clone https://github.com/lisaac/luci-app-dockerman.git
