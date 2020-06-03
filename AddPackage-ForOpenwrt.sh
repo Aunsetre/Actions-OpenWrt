@@ -35,7 +35,7 @@ git clone https://github.com/jerrykuku/lua-maxminddb.git
 git clone https://github.com/jerrykuku/luci-app-vssr.git 
 
 # passwall 依赖
- git clone https://github.com/kenzok8/small
+ #git clone https://github.com/kenzok8/small
 
 #luci-app-openclash ------------------openclash图形
 # luci-app-advancedsetting ------------------系统高级设置
@@ -52,9 +52,9 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 # luci-theme-opentomcat ------------------修复主机名错误（适配18.06）
 # luci-theme-opentomato ------------------修复主机名错误（适配18.06）
 # 注意
- git clone https://github.com/kenzok8/openwrt-packages.git
- cd openwrt-packages/
- rm -rf luci-app-smartdns/
- rm -rf smartdns/
- git clone https://github.com/pymumu/openwrt-smartdns.git
+# git clone https://github.com/kenzok8/openwrt-packages.git
+# cd openwrt-packages/
+# rm -rf luci-app-smartdns/
+# rm -rf smartdns/
+ #git clone https://github.com/pymumu/openwrt-smartdns.git
  git clone https://github.com/pymumu/luci-app-smartdns.git
