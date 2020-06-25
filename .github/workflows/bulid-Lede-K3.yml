@@ -117,7 +117,7 @@ jobs:
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd openwrt/bin/targets/*/*
-        rm -rf packages
+        rm -rf packages/
         ls |grep -v openwrt-bcm53xx-phicomm-k3-squashfs.trx | grep -v config.seed |xargs rm -f
         echo "::set-env name=FIRMWARE::$PWD"
         echo "::set-output name=status::success"
