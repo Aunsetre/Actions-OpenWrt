@@ -14,8 +14,8 @@ on:
   #     - master
   schedule:
     - cron: '0 18 * * 0'
-  repository_dispatch:
-    types: run
+ # repository_dispatch:
+  #  types: run
   watch:
     types: started
 
