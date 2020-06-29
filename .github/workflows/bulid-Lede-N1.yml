@@ -9,15 +9,16 @@
 name: Build OpenWrt
 
 on:
-  # push:
-  #   branches:
-  #     - master
-  #schedule:
-   # - cron: '0 18 * * 0'
   repository_dispatch:
-    types: run
-  watch:
-    types: started
+  release:
+    types: published
+  push:
+    branches:
+      - master
+    paths:
+      - '.config'
+  #watch:
+  #  types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
