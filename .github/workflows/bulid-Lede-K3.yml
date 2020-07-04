@@ -4,6 +4,7 @@
 # Lisence: MIT
 # Author: P3TERX
 # Blog: https://p3terx.com
+#ls |grep -v openwrt-bcm53xx-phicomm-k3-squashfs.trx | grep -v config.seed |xargs rm -f
 #=================================================
 
 name: Build Lede K3
@@ -118,7 +119,6 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages/
-        ls |grep -v openwrt-bcm53xx-phicomm-k3-squashfs.trx | grep -v config.seed |xargs rm -f
         echo "::set-env name=FIRMWARE::$PWD"
         echo "::set-output name=status::success"
     - name: Upload firmware directory
