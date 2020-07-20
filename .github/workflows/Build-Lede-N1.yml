@@ -12,8 +12,8 @@ on:
   # push:
   #   branches:
   #     - master
-  schedule:
-    - cron: '0 18 * * *'
+  #schedule:
+   # - cron: '0 18 * * *'
   repository_dispatch:
     types: run
   watch:
