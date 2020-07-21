@@ -13,12 +13,12 @@ on:
   # push:
   #   branches:
   #     - master
-  schedule:
-    - cron: '0 20 * * *'
+  #schedule:
+  #  - cron: '0 20 * * *'
   repository_dispatch:
     types: run
- # watch:
-  #  types: started
+  watch:
+    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -26,12 +26,12 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .k3-config
   DIY_P1_SH: k3-package.sh
-  DIY_P2_SH: diy-part2.sh
-  SSH_ACTIONS: false
+  DIY_P2_SH: k3-diy.sh
+  SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
-  UPLOAD_WETRANSFER: false
+  UPLOAD_WETRANSFER: true
   TZ: Asia/Shanghai
 
 jobs:
@@ -140,3 +140,8 @@ jobs:
         curl -fsSL git.io/file-transfer | sh
         ./transfer wet -s -p 16 --no-progress ${FIRMWARE} 2>&1 | tee wetransfer.log
         echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
+    - name: Upload config file
+      uses: actions/upload-artifact@master
+      with:
+          name: config
+          path: openwrt/.config
