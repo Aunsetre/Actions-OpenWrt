@@ -27,7 +27,7 @@ env:
   CONFIG_FILE: .k3-config
   DIY_P1_SH: k3-package.sh
   DIY_P2_SH: k3-diy.sh
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
