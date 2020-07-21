@@ -12,12 +12,12 @@ on:
   # push:
   #   branches:
   #     - master
-  #schedule:
-   # - cron: '0 18 * * *'
+  schedule:
+    - cron: '0 18 * * *'
   repository_dispatch:
     types: run
-  watch:
-   types: started
+ # watch:
+  # types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -26,7 +26,7 @@ env:
   CONFIG_FILE: .n1config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
