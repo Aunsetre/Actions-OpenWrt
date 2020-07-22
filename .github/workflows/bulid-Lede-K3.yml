@@ -27,7 +27,7 @@ env:
   CONFIG_FILE: .k3-config
   DIY_P1_SH: k3-package.sh
   DIY_P2_SH: k3-diy.sh
-  SSH_ACTIONS: false
+  SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
@@ -95,6 +95,7 @@ jobs:
     - name: Compile the firmware
       id: compile
       run: |
+        cp openwrt/.config bin/
         cd openwrt
         echo -e "$(nproc) thread compile"
         make -j$(nproc) || make -j1 || make -j1 V=s
@@ -117,7 +118,6 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
-        cp openwrt/.config bin/
         cd openwrt/bin/targets/*/* 
         rm -rf packages/
         echo "::set-env name=FIRMWARE::$PWD"
