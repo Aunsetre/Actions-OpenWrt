@@ -117,7 +117,7 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
-        cp openwrt/.config bin/config.seed
+        cp openwrt/.config bin/
         cd openwrt/bin/targets/*/* 
         rm -rf packages/
         echo "::set-env name=FIRMWARE::$PWD"
@@ -147,4 +147,4 @@ jobs:
       uses: actions/upload-artifact@master
       with:
           name: config
-          path: bin/config.seed
+          path: bin/.config
