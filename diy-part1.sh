@@ -51,6 +51,3 @@ svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall
 #smartdns
 git clone  https://github.com/pymumu/openwrt-smartdns.git
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
-
-#n1-install-program
-git clone https://github.com/tuanqing/install-program
