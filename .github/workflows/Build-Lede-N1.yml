@@ -96,10 +96,9 @@ jobs:
       id: compile
       run: |
         cd openwrt
+        cp .config bin/targets/*/*
         echo -e "$(nproc) thread compile"
         make -j$(nproc) || make -j1 || make -j1 V=s
-        cd ../bin/targets/*/*
-        rm -rf packages/
         echo "::set-output name=status::success"
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
         [ -s DEVICE_NAME ] && echo "::set-env name=DEVICE_NAME::_$(cat DEVICE_NAME)"
@@ -116,6 +115,8 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
+        cd openwrt/bin/targets/*/*
+        rm -rf packages/
         echo "::set-env name=FIRMWARE::$PWD"
         echo "::set-output name=status::success"
 
@@ -139,9 +140,3 @@ jobs:
         curl -fsSL git.io/file-transfer | sh
         ./transfer wet -s -p 16 --no-progress ${FIRMWARE} 2>&1 | tee wetransfer.log
         echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
-        
-    - name: Upload config file
-      uses: actions/upload-artifact@main
-      with:
-          name: config
-          path: openwrt/.config
