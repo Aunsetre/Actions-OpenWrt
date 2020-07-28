@@ -25,7 +25,6 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 ### theme ###
 # luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-theme-argon-dark-mod
 sed -i 's/Microsoft Yahei/Sarasa UI SC/ ' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
 
 #京东签到
