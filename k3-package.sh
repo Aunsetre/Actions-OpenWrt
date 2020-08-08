@@ -1,4 +1,4 @@
-cd package/lean/
+cd package/
 # adguardhome
 rm -rf  luci-app-dockerman luci-lib-docker luci-theme-argon
 
