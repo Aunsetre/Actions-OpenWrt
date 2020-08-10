@@ -16,17 +16,17 @@ on:
     - cron: '0 18 * * *'
   repository_dispatch:
     types: run
- # watch:
-  # types: started
+  watch:
+   types: started
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .opn1config
+  CONFIG_FILE: .OpenWrt-n1config
   DIY_P1_SH: diy-OpenWrt-n1.sh
-  DIY_P2_SH: diy-part2.sh
-  SSH_ACTIONS: false
+  DIY_P2_SH: diy-OpenWrt-n1_2.sh
+  SSH_ACTIONS: true
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
