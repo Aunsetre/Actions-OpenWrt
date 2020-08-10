@@ -9,7 +9,7 @@
 #=============================================================
 
 # Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 #sed -i 's/git.openwrt.org\/project\/luci.git/github.com\/Lienol\/openwrt-luci.git;dev-17.01/' feeds.conf.default
 
 # Add a feed source
