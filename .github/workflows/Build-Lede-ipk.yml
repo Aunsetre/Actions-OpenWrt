@@ -28,6 +28,7 @@ env:
   DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: true
+  UPLOAD_DL_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: true
@@ -104,6 +105,14 @@ jobs:
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
+        
+        
+    - name: Upload dl directory
+      uses: actions/upload-artifact@main
+      if: env.UPLOAD_DL_DIR == 'true'
+      with:
+        name: OpenWrt_dl_${{ env.FILE_DATE }}
+        path: openwrt/dl
 
     - name: Organize files
       id: organize
