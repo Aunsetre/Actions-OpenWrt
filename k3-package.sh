@@ -1,6 +1,6 @@
 cd package/
 # adguardhome
-rm -rf  luci-app-dockerman luci-lib-docker luci-theme-argon
+rm -rf  luci-app-dockerman luci-lib-docker luci-theme-argon k3screenctrl
 
 # luci-theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git
