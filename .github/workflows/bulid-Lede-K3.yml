@@ -120,7 +120,6 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/* 
         ls |grep -v openwrt-bcm53xx-phicomm-k3-squashfs.trx |xargs rm -f
-        rm -rf packages/
         echo "::set-env name=FIRMWARE::$PWD"
         echo "::set-output name=status::success"
     - name: Upload firmware directory
