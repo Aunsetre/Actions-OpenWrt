@@ -3,8 +3,8 @@ cd package/
 rm -rf  luci-app-dockerman luci-lib-docker luci-theme-argon k3screenctrl
 
 # luci-theme-argon
-git clone https://github.com/jerrykuku/luci-theme-argon.git
-sed -i 's/Microsoft Yahei/Sarasa UI SC/' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
+#git clone https://github.com/jerrykuku/luci-theme-argon.git
+#sed -i 's/Microsoft Yahei/Sarasa UI SC/' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
 
 #git clone https://github.com/tty228/luci-app-serverchan.git
 svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome/
