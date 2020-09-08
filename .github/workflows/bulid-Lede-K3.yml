@@ -28,7 +28,7 @@ env:
   DIY_P1_SH: k3-package.sh
   DIY_P2_SH: k3-diy.sh
   SSH_ACTIONS: true
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: true
