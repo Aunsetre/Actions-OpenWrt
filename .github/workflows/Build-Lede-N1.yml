@@ -12,12 +12,13 @@ on:
   # push:
   #   branches:
   #     - master
+  workflow_dispatch:
   schedule:
     - cron: '0 18 * * *'
   repository_dispatch:
     types: run
-#  watch:
-  # types: started
+  watch:
+   types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
