@@ -12,10 +12,11 @@ on:
   # push:
   #   branches:
   #     - master
-  #schedule:
-  #  - cron: '0 18 * * *'
+  workflow_dispatch:
   repository_dispatch:
     types: run
+     #schedule:
+  #  - cron: '0 18 * * *'
   #watch:
   # types: started
 
