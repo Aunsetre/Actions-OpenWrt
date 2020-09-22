@@ -16,14 +16,11 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 sed -i '$a src-git node https://github.com/nxhack/openwrt-node-packages.git' feeds.conf.default
 cd package/  
 
-rm -rf luci-app-vssr  luci-lib-docker luci-app-dockerman luci-theme-argon openwrt-packages  lua-maxminddb small
+#rm -rf luci-app-vssr  luci-lib-docker luci-app-dockerman luci-theme-argon openwrt-packages  lua-maxminddb small
 
 git clone https://github.com/jerrykuku/luci-theme-argon.git
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
-svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome/
 
 #京东签到
-#git clone https://github.com/jerrykuku/node-request.git  #git node-request 依赖
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git  
 
 # helloWorld
