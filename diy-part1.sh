@@ -15,12 +15,9 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
  
 cd package/lean/
-rm -rf luci-app-vssr adguardhome  luci-lib-docker luci-app-dockerman luci-theme-argon luci-app-smartdns openwrt-smartdns luci-app-adguardhome openwrt-packages
-rm -rf kcptun  lua-maxminddb small
+rm -rf luci-app-vssr adguardhome  luci-lib-docker luci-app-dockerman luci-theme-argon luci-app-adguardhome openwrt-packages
+rm -rf kcptun  lua-maxminddb small rm -rf v2ray trojan shadowsocksr-libev ssocks chinadns-ng dns2socks ipt2socks  openssl1.1 v2ray-plugin simple-obfs pdnsd-alt
 
-# adguardhome
-svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome/
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 
 ### theme ###
 # luci-theme-argon
@@ -28,7 +25,6 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 sed -i 's/Microsoft Yahei/Sarasa UI SC/ ' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
 
 #京东签到
-#git clone https://github.com/jerrykuku/node-request.git
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
 
 #docker
@@ -42,8 +38,6 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 # passwall 依赖
 #brook  chinadns-ng   dns2socks  ipt2socks  kcptun  pdnsd-alt  simple-obfs  tcping  v2ray-plugin
 
-svn co https://github.com/Lienol/openwrt-package/trunk/package
-svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall
+svn co https://github.com/xiaorouji/openwrt-package/trunk/package
+svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall
 
-#smartdns
-git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
