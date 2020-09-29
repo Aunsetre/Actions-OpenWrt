@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build Lede N1
+name: Build Lienol OpenWrt N1
 
 on:
   # push:
