@@ -35,5 +35,6 @@ git clone https://github.com/lisaac/luci-lib-docker.git
 git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
 git clone https://github.com/jerrykuku/luci-app-vssr.git 
 
+svn co  https://github.com/kenzok8/openwrt-packages/truck/luci-app-smartdns
 
 
