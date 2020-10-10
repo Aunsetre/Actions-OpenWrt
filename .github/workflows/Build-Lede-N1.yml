@@ -103,13 +103,29 @@ jobs:
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
         [ -s DEVICE_NAME ] && echo "::set-env name=DEVICE_NAME::_$(cat DEVICE_NAME)"
         echo "::set-env name=FILE_DATE::_$(date +"%Y%m%d%H%M")"
+        mkdir ipk
+        cp bin/packages/aarch64_generic/base/v2ray* ipk/
+        cp bin/packages/aarch64_generic/base/*passwall* ipk/
+        
 
-    - name: Upload bin directory
+    - name: Upload packages directory
       uses: actions/upload-artifact@main
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: openwrt/bin
+        path: openwrt/bin/packages
+        
+    - name: Upload ipk directory
+      uses: actions/upload-artifact@main
+      with:
+        name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        path: openwrt/ipk
+        
+    - name: Upload config file
+      uses: actions/upload-artifact@main
+      with:
+          name: config
+          path: openwrt/.config  
 
     - name: Organize files
       id: organize
