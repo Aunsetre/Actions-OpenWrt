@@ -112,13 +112,13 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
-        name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: OpenWrt_packages${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin/packages
         
     - name: Upload ipk directory
       uses: actions/upload-artifact@main
       with:
-        name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: OpenWrt_ipk${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/ipk
         
     - name: Upload config file
