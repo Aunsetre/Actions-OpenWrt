@@ -8,6 +8,10 @@ Build OpenWrt using GitHub Actions
 
 [Read the details in my blog (in Chinese) | 中文教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
+## workflows
+![Build Lede N1](https://github.com/Aunsetre/Actions-OpenWrt/workflows/Build%20Lede%20N1/badge.svg)
+![Build Lienol OpenWrt N1](https://github.com/Aunsetre/Actions-OpenWrt/workflows/Build%20Lienol%20OpenWrt%20N1/badge.svg)
+
 ## Usage
 
 - Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
