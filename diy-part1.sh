@@ -41,3 +41,5 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package
 svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall
 
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
+
