@@ -1,16 +1,14 @@
 # Actions-OpenWrt
 
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
-![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
-![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
+![Build Lede N1](https://github.com/Aunsetre/Actions-OpenWrt/workflows/Build%20Lede%20N1/badge.svg)
+![Build Lienol OpenWrt N1](https://github.com/Aunsetre/Actions-OpenWrt/workflows/Build%20Lienol%20OpenWrt%20N1/badge.svg)
 
 Build OpenWrt using GitHub Actions
 
 [Read the details in my blog (in Chinese) | 中文教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
 ## workflows
-![Build Lede N1](https://github.com/Aunsetre/Actions-OpenWrt/workflows/Build%20Lede%20N1/badge.svg)
-![Build Lienol OpenWrt N1](https://github.com/Aunsetre/Actions-OpenWrt/workflows/Build%20Lienol%20OpenWrt%20N1/badge.svg)
+
 
 ## Usage
 
