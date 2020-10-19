@@ -41,5 +41,5 @@ git clone https://github.com/lisaac/luci-lib-docker.git
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package
 svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall
 
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
+#svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
 
