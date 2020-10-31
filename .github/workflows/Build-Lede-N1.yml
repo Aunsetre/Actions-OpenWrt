@@ -14,7 +14,7 @@ on:
   #     - master
   workflow_dispatch:
   schedule:
-    - cron: '0 18 * * *'
+    - cron: '0 18 * * 5'
   repository_dispatch:
     types: run
   watch:
