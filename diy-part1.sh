@@ -22,7 +22,8 @@ rm -rf luci-app-vssr adguardhome  luci-lib-docker luci-app-dockerman luci-theme-
 ### theme ###
 # luci-theme-argon
 git clone -b 18.06 https://github.com/Aunsetre/luci-theme-argon.git
-#sed -i 's/Microsoft Yahei/Sarasa UI SC/g' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
+sed -i 's/Microsoft Yahei/Sarasa UI SC/g' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
+git clone https://github.com/jerrykuku/luci-app-argon-config.git
 
 #京东签到
 #git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
