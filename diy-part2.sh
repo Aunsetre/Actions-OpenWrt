@@ -9,4 +9,5 @@
 #============================================================
 
 #sed -i 's/192.168.1.1/192.168.31.2/g' package/base-files/files/bin/config_generate
-
+cp -r package/libtorrent-rasterbar package/lean
+sed -i 's/rblibtorrent/libtorrent-rasterbar/' package/lean/qBittorrent/Makefile
