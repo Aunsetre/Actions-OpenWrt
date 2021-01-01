@@ -40,7 +40,7 @@ git clone https://github.com/lisaac/luci-lib-docker.git
 # passwall 依赖
 #brook  chinadns-ng   dns2socks  ipt2socks  kcptun  pdnsd-alt  simple-obfs  tcping  v2ray-plugin
 
-git clone https://github.com/xiaorouji/openwrt-passwall.git
+#git clone https://github.com/xiaorouji/openwrt-passwall.git
 
 
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
