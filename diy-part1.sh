@@ -12,10 +12,11 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
  
 cd package/lean/
-rm -rf luci-app-vssr adguardhome  luci-lib-docker luci-app-dockerman luci-theme-argon luci-app-adguardhome openwrt-packages
+rm -rf luci-app-vssr adguardhome  luci-lib-docker luci-app-dockerman luci-theme-argon luci-app-adguardhome brook chinadns-ng dns2socks \
+ipt2socks kcptun microsocks naiveproxy openssl1.1 v2ray-plugin simple-obfs pdnsd-alt ssocks tcping  trojan* xray v2ray
 #rm -rf kcptun  lua-maxminddb small v2ray trojan shadowsocksr-libev ssocks chinadns-ng dns2socks ipt2socks  openssl1.1 v2ray-plugin simple-obfs pdnsd-alt
 
 
