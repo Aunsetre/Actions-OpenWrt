@@ -28,6 +28,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git
 
 #京东签到
 #git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
+https://github.com/BCYDTZ/luci-app-UUGameAcc.git
 
 #docker
 git clone https://github.com/lisaac/luci-app-dockerman.git
