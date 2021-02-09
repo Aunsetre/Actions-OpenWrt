@@ -34,8 +34,8 @@ git clone https://github.com/lisaac/luci-app-dockerman.git
 git clone https://github.com/lisaac/luci-lib-docker.git
 
 # helloWorld
-git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
-git clone https://github.com/garypang13/luci-app-bypass.git
+#git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
+#git clone https://github.com/garypang13/luci-app-bypass.git
 #git clone https://github.com/jerrykuku/luci-app-vssr.git 
 
 # passwall 依赖
