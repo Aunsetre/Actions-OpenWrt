@@ -22,7 +22,7 @@ ipt2socks kcptun microsocks naiveproxy openssl1.1 v2ray-plugin simple-obfs pdnsd
 
 ### theme ###
 # luci-theme-argon
-git clone -b 18.06 https://github.com/Aunsetre/luci-theme-argon.git
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 sed -i 's/Microsoft Yahei/Sarasa UI SC/g' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
 git clone https://github.com/jerrykuku/luci-app-argon-config.git
 
