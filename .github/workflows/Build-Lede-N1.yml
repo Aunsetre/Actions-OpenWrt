@@ -14,7 +14,7 @@ on:
   #     - master
   workflow_dispatch:
   schedule:
-    - cron: '0 18 * * 6'
+    - cron: '0 18 * * 1'
   repository_dispatch:
     types: run
   watch:
@@ -27,7 +27,7 @@ env:
   CONFIG_FILE: .n1config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
