@@ -12,8 +12,8 @@
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages.git;main' feeds.conf.default
+sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+#sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages.git;main' feeds.conf.default
  
 cd package/lean/
 rm -rf luci-app-vssr adguardhome  luci-lib-docker luci-app-dockerman luci-theme-argon luci-app-adguardhome brook chinadns-ng dns2socks \
@@ -46,6 +46,6 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 
 
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
-#svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome
 
