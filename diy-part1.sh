@@ -17,10 +17,13 @@ sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;master' fe
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages.git;main' feeds.conf.default
  
 cd package/lean/
-rm -rf luci-app-vssr adguardhome  luci-lib-docker luci-app-dockerman luci-theme-argon luci-app-adguardhome brook chinadns-ng dns2socks \
-ipt2socks kcptun microsocks naiveproxy openssl1.1 v2ray-plugin simple-obfs pdnsd-alt ssocks tcping  trojan* xray v2ray
+#rm -rf luci-app-vssr adguardhome  luci-lib-docker luci-app-dockerman luci-theme-argon luci-app-adguardhome brook chinadns-ng dns2socks \
+#ipt2socks kcptun microsocks naiveproxy openssl1.1 v2ray-plugin simple-obfs pdnsd-alt ssocks tcping  trojan* xray v2ray
+rm -rf luci-theme-argon
 #rm -rf kcptun  lua-maxminddb small v2ray trojan shadowsocksr-libev ssocks chinadns-ng dns2socks ipt2socks  openssl1.1 v2ray-plugin simple-obfs pdnsd-alt
 
+#passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall/
 
 ### theme ###
 # luci-theme-argon
