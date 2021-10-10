@@ -160,3 +160,13 @@ jobs:
       with:
           name: config
           path: openwrt/.config
+          
+    - name: Telegram notification
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: |
+          编译时间：${{ env.DATE }}
+          更新信息：${{ env.useVersionInfo }}
+          ${{ env.PRODUCT_NAME }} 编译完成
