@@ -195,4 +195,4 @@ jobs:
         message: |
           编译时间：${{ env.DATE }}
           OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }} 编译完成
-          下载地址：https://github.com/Aunsetre/Actions-OpenWrt/actions/runs/${{ env.GITHUB_RUN_ID }}
+          下载地址：https://github.com/Aunsetre/Actions-OpenWrt/actions/runs/$GITHUB_RUN_ID
