@@ -23,8 +23,6 @@ cd package/lean/
 rm -rf luci-theme-argon
 #rm -rf kcptun  lua-maxminddb small v2ray trojan shadowsocksr-libev ssocks chinadns-ng dns2socks ipt2socks  openssl1.1 v2ray-plugin simple-obfs pdnsd-alt
 
-#passwall
-#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall/
 
 ### theme ###
 # luci-theme-argon
@@ -46,6 +44,12 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 #brook  chinadns-ng   dns2socks  ipt2socks  kcptun  pdnsd-alt  simple-obfs  tcping  v2ray-plugin
 
 #git clone https://github.com/xiaorouji/openwrt-passwall.git
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook package/brook
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/chinadns-ng
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go package/trojan-go
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus package/trojan-plus
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/hysteria package/hysteria
 
 
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
