@@ -23,7 +23,7 @@ rm -rf luci-theme-argon
 #rm -rf kcptun  lua-maxminddb small v2ray trojan shadowsocksr-libev ssocks chinadns-ng dns2socks ipt2socks  openssl1.1 v2ray-plugin simple-obfs pdnsd-alt
 
 #passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall/
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall/
 
 ### theme ###
 # luci-theme-argon
