@@ -27,7 +27,7 @@ rm -rf luci-theme-argon
 ### theme ###
 # luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-sed -i 's/Microsoft Yahei/Sarasa UI SC/g' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
+#sed -i 's/Microsoft Yahei/Sarasa UI SC/g' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
 git clone https://github.com/jerrykuku/luci-app-argon-config.git
 
 
@@ -36,20 +36,20 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git
 #git clone https://github.com/lisaac/luci-lib-docker.git
 
 # helloWorld
-git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
+#git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
 #git clone https://github.com/garypang13/luci-app-bypass.git
-git clone https://github.com/jerrykuku/luci-app-vssr.git 
+#git clone https://github.com/jerrykuku/luci-app-vssr.git 
 
 # passwall 依赖
 #brook  chinadns-ng   dns2socks  ipt2socks  kcptun  pdnsd-alt  simple-obfs  tcping  v2ray-plugin
 
 #git clone https://github.com/xiaorouji/openwrt-passwall.git
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook package/brook
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/chinadns-ng
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go package/trojan-go
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus package/trojan-plus
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/hysteria package/hysteria
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook package/brook
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/chinadns-ng
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go package/trojan-go
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus package/trojan-plus
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/hysteria package/hysteria
 
 
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
