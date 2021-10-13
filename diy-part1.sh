@@ -53,6 +53,6 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git
 
 
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome
+#svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome
 git clone https://github.com/ophub/luci-app-amlogic.git
