@@ -188,3 +188,15 @@ jobs:
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Telegram notification
+      uses: appleboy/telegram-action@master
+      if: steps.organize.outputs.status == 'success'
+      with:
+        to: ${{ secrets.TELEGRAM_CHAT_ID }}
+        token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        message: |
+          编译时间：${{ env.DATE }}
+          OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }} 编译完成
+          下载地址：https://github.com/Aunsetre/Actions-OpenWrt/releases
+
