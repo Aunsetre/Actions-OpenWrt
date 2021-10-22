@@ -16,3 +16,14 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+cp 
+
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;master' feeds.conf.default
+
+cd package/lean/
+rm -rf luci-theme-argon luci-app-dockerman luci-lib-docker
+
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+git clone https://github.com/jerrykuku/luci-app-argon-config.git
+git clone https://github.com/lisaac/luci-app-dockerman.git
+git clone https://github.com/lisaac/luci-lib-docker.git
