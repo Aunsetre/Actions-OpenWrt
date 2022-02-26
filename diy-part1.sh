@@ -36,10 +36,10 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git
 #git clone https://github.com/lisaac/luci-app-dockerman.git
 #git clone https://github.com/lisaac/luci-lib-docker.git
 
-# helloWorld
-#git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
-#git clone https://github.com/garypang13/luci-app-bypass.git
-#git clone https://github.com/jerrykuku/luci-app-vssr.git 
+#helloWorld
+git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
+git clone https://github.com/garypang13/luci-app-bypass.git
+git clone https://github.com/jerrykuku/luci-app-vssr.git 
 
 # passwall 依赖
 #brook  chinadns-ng   dns2socks  ipt2socks  kcptun  pdnsd-alt  simple-obfs  tcping  v2ray-plugin
