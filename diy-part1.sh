@@ -45,13 +45,13 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 # passwall 依赖
 #brook  chinadns-ng   dns2socks  ipt2socks  kcptun  pdnsd-alt  simple-obfs  tcping  v2ray-plugin
 
-#git clone https://github.com/xiaorouji/openwrt-passwall.git
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/hysteria
+git clone https://github.com/xiaorouji/openwrt-passwall.git
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/hysteria
 
 
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
