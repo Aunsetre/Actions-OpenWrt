@@ -45,7 +45,7 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 # passwall 依赖
 #brook  chinadns-ng   dns2socks  ipt2socks  kcptun  pdnsd-alt  simple-obfs  tcping  v2ray-plugin
 
-git clone https://github.com/xiaorouji/openwrt-passwall.git
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
