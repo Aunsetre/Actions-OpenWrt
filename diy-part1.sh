@@ -12,7 +12,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;master' feeds.conf.default
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages.git;main' feeds.conf.default
 #sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
@@ -39,13 +39,13 @@ git clone https://github.com/vernesong/OpenClash.git
 
 #helloWorld
 git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
-git clone https://github.com/garypang13/luci-app-bypass.git
-git clone https://github.com/jerrykuku/luci-app-vssr.git 
+#git clone https://github.com/garypang13/luci-app-bypass.git
+#git clone https://github.com/jerrykuku/luci-app-vssr.git 
 
 # passwall 依赖
 #brook  chinadns-ng   dns2socks  ipt2socks  kcptun  pdnsd-alt  simple-obfs  tcping  v2ray-plugin
 
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci
+#git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
